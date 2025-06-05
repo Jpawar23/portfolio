@@ -5,6 +5,13 @@ const role = [
     "web Developer",
     "Reactjs Developer"
 ]
+const handleScroll = (id) => {
+    const element = document.getElementById(id);
+    if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+    }
+};
+
 const Hero = () => {
     const [currentRoleIndex, setCurrentRoleIndex] = useState(0);
     useEffect(() => {
@@ -47,17 +54,21 @@ const Hero = () => {
                         sx={{ color: '#555', mb: 2, fontSize: { xs: '1.25rem', md: '1.5rem' } }}
                     >
                         {role[currentRoleIndex]}
-                        {/* Full Stack Web Developer */}
                     </Typography>
                     <Typography variant="body1" sx={{ color: '#666', mb: 4, maxWidth: 500 }}>
                         I craft modern, responsive websites that are fast, accessible, and built with the latest technologies.
                         {/* Bringing ideas to life with clean code and thoughtful design. */}
                     </Typography>
                     <Box sx={{ display: 'flex', gap: 2, flexWrap: 'wrap' }}>
-                        <Button variant="contained" color="primary" size="large">
+                        {/* <Button variant="contained" color="primary" size="large">
+                            View Projects
+                        </Button> */}
+                        <Button variant="contained" color="primary" size="large" onClick={() => handleScroll('Project')}>
                             View Projects
                         </Button>
-                        <Button variant="outlined" color="primary" size="large">
+
+
+                        <Button variant="outlined" color="primary" size="large" onClick={() => handleScroll('Contact')}>
                             Contact Me
                         </Button>
                     </Box>

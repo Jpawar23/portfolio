@@ -1,9 +1,9 @@
-import React from 'react';
 import { Box, Typography, Chip, Stack, Divider } from '@mui/material';
 
 const techStack = [
-    'React.js', 'Node.js', 'Express.js', 'MongoDB',
+    'React.js', 'Node.js', 'Express.js', 'MongoDB', 'MySQL',
     'JavaScript', 'TypeScript', 'HTML5', 'CSS3', 'Material UI',
+
 ];
 
 const About = () => {
@@ -30,9 +30,15 @@ const About = () => {
                 variant="body1"
                 sx={{ color: '#444', fontSize: '1.1rem', maxWidth: '900px', mx: 'auto', mb: 3, textAlign: 'center' }}
             >
-                I’m a full stack web developer with a passion for building performant, scalable,
+                {/* I’m a full stack web developer with a passion for building performant, scalable,
                 and user-friendly web applications. With strong experience in both frontend and backend
-                technologies, I enjoy turning complex challenges into elegant, efficient solutions.
+                technologies, I enjoy turning complex challenges into elegant, efficient solutions. */}
+                I’m a MERN stack web developer with a strong focus on building fast, scalable, and intuitive web applications.
+                I specialize in frontend development using React.js and enjoy bringing seamless user experiences to life. With solid experience
+                in MongoDB, Express.js, Node.js, and React, I love turning complex ideas into clean, responsive, and maintainable solutions.
+                I’m passionate about writing efficient code, solving real-world problems, and constantly learning to stay up to date with the latest technologies.
+
+
             </Typography>
 
             <Typography

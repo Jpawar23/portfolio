@@ -1,14 +1,3 @@
-// import react from "react";
-
-// export const Hero = () => {
-//     return (
-//         <>
-
-//         </>
-//     )
-// }
-
-
 import * as React from 'react';
 import PropTypes from 'prop-types';
 import AppBar from '@mui/material/AppBar';
@@ -30,6 +19,13 @@ import HeroSection from '../Scrrens/HeroScrren';
 const drawerWidth = 240;
 const navItems = ['About', 'Project', 'Contact'];
 
+const handleScroll = (id) => {
+    const element = document.getElementById(id);
+    if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+    }
+};
+
 function DrawerAppBar(props) {
     const { window } = props;
     const [mobileOpen, setMobileOpen] = React.useState(false);
@@ -44,7 +40,7 @@ function DrawerAppBar(props) {
                 MUI
             </Typography>
             <Divider />
-            <List>
+            {/* <List>
                 {navItems.map((item) => (
                     <ListItem key={item} disablePadding>
                         <ListItemButton sx={{ textAlign: 'center' }}>
@@ -52,7 +48,17 @@ function DrawerAppBar(props) {
                         </ListItemButton>
                     </ListItem>
                 ))}
+            </List> */}
+            <List>
+                {navItems.map((item) => (
+                    <ListItem key={item} disablePadding>
+                        <ListItemButton sx={{ textAlign: 'center' }} onClick={() => handleScroll(item)}>
+                            <ListItemText primary={item} />
+                        </ListItemButton>
+                    </ListItem>
+                ))}
             </List>
+
         </Box>
     );
 
@@ -77,15 +83,22 @@ function DrawerAppBar(props) {
                         component="div"
                         sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' } }}
                     >
-                        {/* MUI */}
                     </Typography>
-                    <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
+                    {/* <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
                         {navItems.map((item) => (
                             <Button key={item} sx={{ color: '#fff' }}>
                                 {item}
                             </Button>
                         ))}
+                    </Box> */}
+                    <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
+                        {navItems.map((item) => (
+                            <Button key={item} sx={{ color: '#fff' }} onClick={() => handleScroll(item)}>
+                                {item}
+                            </Button>
+                        ))}
                     </Box>
+
                 </Toolbar>
             </AppBar>
             <nav>

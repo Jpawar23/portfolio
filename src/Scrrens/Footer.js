@@ -27,7 +27,7 @@ export default function Footer() {
                 mb={1}
             >
                 <Link
-                    href="mailto:yourname@example.com"
+                    href="mailto:juhi.pawar0411@gmail.com"
                     color="inherit"
                     underline="hover"
                     sx={{ display: "flex", alignItems: "center" }}
@@ -35,7 +35,7 @@ export default function Footer() {
                     <EmailIcon sx={{ mr: 0.5 }} /> Email
                 </Link>
                 <Link
-                    // href="https://linkedin.com/in/yourprofile"
+                    href="www.linkedin.com/in/juhi-pawar-65471a206"
                     target="_blank"
                     rel="noopener"
                     color="inherit"
@@ -45,7 +45,7 @@ export default function Footer() {
                     <LinkedInIcon sx={{ mr: 0.5 }} /> LinkedIn
                 </Link>
                 <Link
-                    // href="https://github.com/yourusername"
+                    href="https://github.com/Jpawar23"
                     target="_blank"
                     rel="noopener"
                     color="inherit"

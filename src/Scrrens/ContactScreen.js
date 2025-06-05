@@ -5,13 +5,9 @@ import {
     Grid,
     TextField,
     Button,
-    Link,
-    Stack,
     Paper,
 } from "@mui/material";
-import EmailIcon from "@mui/icons-material/Email";
-import LinkedInIcon from "@mui/icons-material/LinkedIn";
-import GitHubIcon from "@mui/icons-material/GitHub";
+
 
 export default function ContactSection() {
     return (
@@ -33,7 +29,6 @@ export default function ContactSection() {
             >
 
 
-                {/* Right Side: Contact Form */}
                 <Grid item xs={12} md={7}>
                     <Paper sx={{ p: 4, height: "100%" }}>
                         <Typography variant="h6" gutterBottom>
