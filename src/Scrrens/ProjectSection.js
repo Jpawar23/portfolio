@@ -247,13 +247,7 @@ const projects = [
         demoLink: "https://demo-mobileapp.com",
         githubLink: "https://github.com/Jpawar23",
     },
-    // {
-    //     id: 3,
-    //     title: "API Development",
-    //     description: "A React-based",
-    //     technologies: ["Node.js", "Express"],
-    //     demoLink: "https://github.com/user/api-project",
-    // },
+
 ];
 
 export default function ProjectsSection() {
@@ -280,7 +274,7 @@ export default function ProjectsSection() {
                                         mb: 2,
                                         overflow: "hidden",
                                         display: "-webkit-box",
-                                        WebkitLineClamp: 1,
+                                        WebkitLineClamp: 3,
                                         WebkitBoxOrient: "vertical"
                                     }}
                                 >
